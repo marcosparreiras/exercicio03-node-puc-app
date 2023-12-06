@@ -14,4 +14,4 @@ O acesso do `usuário` é limitado apenas a visualização dos produtos, já o a
 
 ## Deploy
 
-[Ainda não disponível](#)
+[https://exercicio03-node-puc-app.netlify.app/](https://exercicio03-node-puc-app.netlify.app/)
