@@ -1,0 +1,93 @@
+.create {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: min-content auto min-content;
+}
+
+.create-main {
+  grid-area: main;
+  margin: 1.6rem;
+  padding: 1.6rem;
+  overflow: auto;
+}
+
+.create-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 3rem;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--secondary-color);
+  box-shadow: 3px 3px 2px var(--secondary-color);
+  animation: fade-in-down 2s ease;
+  width: 60rem;
+  margin-top: 5rem;
+  margin-inline: auto;
+}
+
+.create-main label {
+  width: 100%;
+}
+
+.create-main span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.create-main input,
+.create-main textarea {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  resize: none;
+  transition: font-size 500ms linear;
+}
+
+.create-main input:focus,
+.create-main textarea:focus {
+  font-size: 1.7rem;
+}
+
+.create-main textarea {
+  height: 10rem;
+}
+
+.create-main form div {
+  display: flex;
+  gap: 2rem;
+}
+
+.create-main button {
+  border: none;
+  padding: 1rem;
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-color: var(--secondary-bg-color);
+  transition: 200ms linear;
+}
+
+.create-main button:hover {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .create-main form {
+    width: 95%;
+  }
+
+  .create-main h1 {
+    font-size: 2rem;
+  }
+
+  .create-main form div {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  gap: 1rem;
+  box-shadow: 2px 2px 2px var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  height: 12rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: clamp(26rem, 80%, 60rem);
+  animation: flash 300ms linear backwards;
+}
+
+.card img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.card img:hover {
+  filter: brightness(1);
+}
+
+.card-content {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card-content > div > p {
+  max-height: 6rem;
+  overflow: hidden;
+}
+
+.card-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-title svg {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.card-title svg:hover {
+  color: white;
+}
+
+.card-values {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-qty {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 16rem;
+  }
+  .card-values {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    height: 12rem;
+  }
+
+  .card-content > div > p {
+    display: none;
+  }
+}
