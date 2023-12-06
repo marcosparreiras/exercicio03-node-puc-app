@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Header from "../../components/header";
+import api from "../../services/api";
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./create.css";
-import api from "../../services/api";
 
 function Create() {
   const [name, setName] = useState("");

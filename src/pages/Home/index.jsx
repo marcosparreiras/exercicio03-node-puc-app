@@ -5,7 +5,7 @@ import { FiPlus } from "react-icons/fi";
 import { useAuth } from "../../hooks/auth";
 import api from "../../services/api";
 import ROLES from "../../utils/roles";
-import Header from "../../components/header";
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Card from "../../components/Card";
 import "./home.css";
